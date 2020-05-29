@@ -8,7 +8,7 @@ You need Java 8 on your Server.
 ## Installation
 
 ```bash
-https://github.com/Realtox/MC-Server-Downloader.git
+git clone https://github.com/Realtox/MC-Server-Downloader.git
 ```
 Go to the directory
 Use 
