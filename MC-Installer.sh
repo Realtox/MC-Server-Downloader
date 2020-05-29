@@ -75,55 +75,55 @@ if [ "$ANS" == "EN" ]
 		cd ./$SERVERNAME
 		if [ "$VERSION" == "1" ]
 			then
-				echo "Downloading the spigot. jar..."
+				echo "Downloading the spigot.jar..."
 				wget https://cdn.getbukkit.org/spigot/spigot-1.7.10-SNAPSHOT-b1657.jar
 				mv spigot-1.7.10-SNAPSHOT-b1657.jar spigot.jar
 				echo "Finish"
 		elif [ "$VERSION" == "2" ]
 			then
-				echo "Downloading the spigot. jar..."
+				echo "Downloading the spigot.jar..."
 				wget https://cdn.getbukkit.org/spigot/spigot-1.8-R0.1-SNAPSHOT-latest.jar
 				mv spigot-1.8-R0.1-SNAPSHOT-latest.jar spigot.jar
 				echo "Finish"
 		elif [ "$VERSION" == "3" ]
 			then
-				echo "Downloading the spigot. jar..."
+				echo "Downloading the spigot.jar..."
 				wget https://cdn.getbukkit.org/spigot/spigot-1.8.7-R0.1-SNAPSHOT-latest.jar
 				mv spigot-1.8.7-R0.1-SNAPSHOT-latest.jar spigot.jar
 				echo "Finish"
 		elif [ "$VERSION" == "4" ]
 			then
-				echo "Downloading the spigot. jar..."
+				echo "Downloading the spigot.jar..."
 				wget https://cdn.getbukkit.org/spigot/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar
 				mv spigot-1.8.8-R0.1-SNAPSHOT-latest.jar spigot.jar
 				echo "Finish"
 		elif [ "$VERSION" == "5" ]
 			then
-				echo "Downloading the spigot. jar..."
+				echo "Downloading the spigot.jar..."
 				wget https://cdn.getbukkit.org/spigot/spigot-1.9-R0.1-SNAPSHOT-latest.jar
 				mv spigot-1.9-R0.1-SNAPSHOT-latest.jar spigot.jar
 				echo "Finish"
 		elif [ "$VERSION" == "6" ]
 			then
-				echo "Downloading the spigot. jar..."
+				echo "Downloading the spigot.jar..."
 				wget https://cdn.getbukkit.org/spigot/spigot-1.10-R0.1-SNAPSHOT-latest.jar
 				mv spigot-1.10-R0.1-SNAPSHOT-latest.jar spigot.jar
 				echo "Finish"
 		elif [ "$VERSION" == "7" ]
 			then
-				echo "Downloading the spigot. jar..."
+				echo "Downloading the spigot.jar..."
 				wget https://cdn.getbukkit.org/spigot/spigot-1.12.jar
 				mv spigot-1.12.jar spigot.jar
 				echo "Finish"
 		elif [ "$VERSION" == "8" ]
 			then
-				echo "Downloading the spigot. jar..."
+				echo "Downloading the spigot.jar..."
 				wget https://cdn.getbukkit.org/spigot/spigot-1.15.jar
 				mv spigot-1.15.jar spigot.jar
 				echo "Finish"
 		elif [ "$VERSION" == "9" ]
 			then
-				echo "Downloading the spigot. jar..."
+				echo "Downloading the spigot.jar..."
 				wget https://cdn.getbukkit.org/spigot/spigot-1.15.2.jar
 				mv spigot-1.15.2.jar spigot.jar
 				echo "Finish"
