@@ -3,7 +3,7 @@ Download the newest spigot.jar with Multilanguage System (EN &amp; DE)
 
 ## Info
 
-You need Java 8 on your Server.
+To start a Minecraft server, you need Java on your server.
 
 ## Installation
 
