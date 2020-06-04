@@ -7,7 +7,17 @@ echo "## Systemzeit: " `date`
 echo "##"
 echo "#########################"
 
-echo "Sprache?"
+PRGPATH=`which screen 2>/dev/null`
+[ $? -eq 1 ] && {
+	echo "Install Screen... Please Wait"
+	apt install screen
+}
+	echo "Screen is installed, next step"
+	
+java -version
+echo "Please check if Java is installed."
+
+echo "Language?"
 echo "Englisch: EN"
 echo "German: DE"
 echo "Exit: n"
