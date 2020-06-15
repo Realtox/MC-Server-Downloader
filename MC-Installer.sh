@@ -38,7 +38,7 @@ if [ "$ANS" == "EN" ]
 		echo "6 = 1.10"
 		echo "7 = 1.12"
 		echo "8 = 1.15"
-		echo "9 = 1.15.2"
+		echo "9 = latest"
 		read VERSION
 		if echo $VERSION | grep -q -e "^[1-9][1-9]*$"; then 
 			echo "Okay"
@@ -133,9 +133,9 @@ if [ "$ANS" == "EN" ]
 				echo "Finish"
 		elif [ "$VERSION" == "9" ]
 			then
-				echo "Downloading the spigot.jar..."
-				wget https://cdn.getbukkit.org/spigot/spigot-1.15.2.jar
-				mv spigot-1.15.2.jar spigot.jar
+				version=$(wget -q -O - https://getbukkit.org/download/spigot | grep "<h2>" | awk 'NR==1 {print; exit}' - | sed "s/<h2>//" | sed "s/<\/h2>//")
+				echo "Downloading the spigot-$version.jar..."
+				wget -O spigot.jar https://cdn.getbukkit.org/spigot/spigot-$version.jar
 				echo "Finish"
 			else
 				echo "EXIT"
