@@ -253,10 +253,10 @@ elif [ "$ANS" == "DE" ]
 				echo "Fertig"
 		elif [ "$VERSION" == "9" ]
 			then
-				echo "Lade die spigot.jar runter..."
-				wget https://cdn.getbukkit.org/spigot/spigot-1.15.2.jar
-				mv spigot-1.15.2.jar spigot.jar
-				echo "Fertig"
+				version=$(wget -q -O - https://getbukkit.org/download/spigot | grep "<h2>" | awk 'NR==1 {print; exit}' - | sed "s/<h2>//" | sed "s/<\/h2>//")
+				echo "Downloading the spigot-$version.jar..."
+				wget -O spigot.jar https://cdn.getbukkit.org/spigot/spigot-$version.jar
+				echo "Finish"
 			else
 				echo "EXIT"
 			exit
